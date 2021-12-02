@@ -20,9 +20,12 @@ function splitSentence(arrayString) {
 
 
 // Desafio 4
-function concatName() {
-  
+function concatName(array) {
+  let res = (array[array.length-1]) + ', ' + (array[0])
+  return res
+
 }
+
 
 // Desafio 5
 function footballPoints() {
