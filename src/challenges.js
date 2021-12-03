@@ -27,6 +27,7 @@ function concatName(array) {
 }
 
 // Desafio 5
+// exercicio dedicado ao @Daniel - MD[TRYBE]
 function footballPoints(wins, ties) {
   // seu código aqui
   if (wins === 0 && ties === 0) {
@@ -41,9 +42,23 @@ function footballPoints(wins, ties) {
 
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+
+function highestCount(numbers) {
+  let contArr = 0
+  let maxNumberNow = numbers[0]
+
+  for (let init of numbers) {
+    if (init > maxNumberNow) {
+      maxNumberNow = init
+      contArr = 0
+    } 
+    if (init === maxNumberNow) {
+      contArr += 1
+    }
+  }
+  return contArr
 }
+
 
 // Desafio 7
 function catAndMouse() {
