@@ -61,9 +61,20 @@ function highestCount(numbers) {
 
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse, cat1, cat2) {
+  /* Conteúdo para a resolução do problema abaixo
+  https://www.devmedia.com.br/matematica-em-javascript-o-objeto-math/27439
+  */
+  if (Math.abs((cat1 - mouse)) < Math.abs((cat2 - mouse))) {
+    return 'cat1';
+  }
+  if (Math.abs((cat1 - mouse)) === Math.abs((cat2 - mouse))) {
+    return 'os gatos trombam e o rato foge';
+  }
+  return 'cat2';
+
 }
+
 
 // Desafio 8
 function fizzBuzz() {
