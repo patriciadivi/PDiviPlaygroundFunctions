@@ -42,17 +42,15 @@ function footballPoints(wins, ties) {
 
 
 // Desafio 6
-
 function highestCount(numbers) {
   let contArr = 0
   let maxNumberNow = numbers[0]
-
   for (let init of numbers) {
     if (init > maxNumberNow) {
       maxNumberNow = init
       contArr = 0
     } 
-    if (init === maxNumberNow) {
+    if (init === maxNumberNow) { true
       contArr += 1
     }
   }
@@ -76,10 +74,25 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 
+let numbers = [2, 15, 7, 9, 15]
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(numbers) {
+  let arrayString = [];
+  for (let compare = 0; compare < numbers.length; compare += 1) {
+    if (numbers[compare] % 3 === 0 && numbers[compare] % 5 === 0) {
+      arrayString.push("fizzBuzz")
+    } else if (numbers[compare] % 3 === 0) {
+      arrayString.push("fizz")
+    } else if (numbers[compare] % 5 === 0) {
+      arrayString.push("buzz")
+    } else{
+      arrayString.push("bug!")
+    }
+  }
+  return arrayString
+
 }
+
 
 // Desafio 9
 function encode() {
