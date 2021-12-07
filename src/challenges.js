@@ -74,7 +74,6 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 
-let numbers = [2, 15, 7, 9, 15]
 // Desafio 8
 function fizzBuzz(numbers) {
   let arrayString = [];
@@ -95,11 +94,43 @@ function fizzBuzz(numbers) {
 
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(stringArr) {
+  let newV = '';
+  for (let position of stringArr) {
+    if(position === 'a'){
+      newV += '1'
+    } else if (position === 'e'){
+      newV += '2'
+    } else if (position === 'i') {
+      newV += '3'
+    } else if ((position === 'o')) {
+      newV += '4'
+    } else if (position === 'u') {
+      newV += '5'
+    } else {
+      newV += position
+    }
+  }
+  return newV
 }
-function decode() {
-  // seu código aqui
+function decode(stringArr) {
+  let changePosition = '';
+  for (const changeNumber of stringArr) {
+    if (changeNumber === '1') {
+      changePosition += 'a'
+    } else if (changeNumber === '2') {
+      changePosition += 'e'
+    } else if (changeNumber === '3') {
+      changePosition += 'i'
+    } else if (changeNumber === '4') {
+      changePosition += 'o'
+    } else if (changeNumber === '5') {
+      changePosition += 'u'
+    } else {
+      changePosition += changeNumber
+    }
+  }
+  return changePosition
 }
 
 module.exports = {
